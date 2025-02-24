@@ -1,17 +1,34 @@
 # OpenBypass
 An MDM bypass & iOS OTA disabler/eraser application written in C#.
 
-### Device activation is coming soon, no ETA is currently planned at the moment.
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /> 
 
-## If you are sharing this on a blog or what not, please direct users to this repository instead of a file-sharing service, it helps raise awareness for this project.
+
+[![GitHub stars](https://img.shields.io/github/stars/tterb/playmusic.svg?style=social&label=Star)](https://github.com/OpenBypassProject/OpenBypass)
+[![GitHub forks](https://img.shields.io/github/forks/tterb/playmusic.svg?style=social&label=Fork)](https://github.com/OpenBypassProject/OpenBypass)
+
+### For those looking to join our Discord, you can join here: [Discord](https://discord.gg/cUa7WVmx7E)
+
+# Supported Devices
+- Anything supported by checkra1n is supported.
+
+# Current Features
+- OTA Disabler for iOS 12+
+- Eraser for iOS 12 +
+- MDM Bypass
+
+## Coming Soon
+- Device Activation
+- Passcode Bypass
+
 
 # License
 
-This application (and its source code) is licensed under GPL-3. Any code used in this repository must also be open-sourced & licensed under GPL-3. Furthermore, no warranty is offered & we aren't responsible if you mess up your iOS device or your computer. 
+This application (and its source code) is licensed under GPL-3. Any code used in this repository must also be open-sourced & licensed under GPL-3. Furthermore, no warranty is offered & we aren't responsible if you mess up your iOS device or your computer. Furthermore, if you are a repair shop & charge for this software you are not allowed to do so.
 
 # Issues
 
-If you are having issues with this software, feel free to make an issue under the 'Issues' tab with your device model, iOS version, & what was used.
+If you are having issues with this software, feel free to make an issue under the 'Issues' tab with your device model, iOS version, & what was used. For quicker support, we recommend joining our Discord server.
 
 # Contributing
 
@@ -26,3 +43,4 @@ OpenBypass uses a few 3rd party libraries, they are listed below:
 -FontAwesome.Sharp
 
 -LibiMobileDevice
+ 

@@ -14,9 +14,36 @@ namespace OpenBypass
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home());
+            bool flag = false;
+            Mutex mutex = new Mutex(false, "OpenBypass.exe", out flag);
+            try
+            {
+                if (flag)
+                {
+                    try
+                    {
+                        Application.EnableVisualStyles();
+                        Application.SetCompatibleTextRenderingDefault(false);
+                        Application.Run(new Home());
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("ERROR: " + ex.Message, "ERROR Message", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("An application instance is already running", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+                }
+            }
+            finally
+            {
+                if (mutex != null)
+                {
+                    mutex.Close();
+                    mutex = null;
+                }
+            }
         }
     }
 }
